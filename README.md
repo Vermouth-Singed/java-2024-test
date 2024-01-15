@@ -1,12 +1,12 @@
-###사용할 언어와 프레임워크
+### 사용할 언어와 프레임워크
 - Java 17 + Spring Boot
 
-###JDK 17 을 선택한 이유
+### JDK 17 을 선택한 이유
 - OpenJDK 지원 종료 일정 여유 (https://access.redhat.com/ko/articles/6973017)
 - JDK 11 버젼부터 HttpClient 지원
 - JDK 21 버젼에 Virtual Thread 추가
 
-###HttpURLConnection 사용 이유
+### HttpURLConnection 사용 이유
 - Java 에서 제공하는 표준 라이브러리, 추가 세팅 X
 - HttpClient 예시가 훨씬 간결하지만 아직은 HttpURLConnection 이 권장되는 분위기
 - 외부 라이브러리 (OkHttp, Unirest) 고려
@@ -48,7 +48,7 @@ try {
 }
 ```
 
-###인터셉터 세팅
+### 인터셉터 세팅
 ```
 @Configuration
 public class WebMvcConfig implements WebMvcConfigurer {
